@@ -20,9 +20,9 @@ temas.forEach(t => {
     selectTema.appendChild(option);
 });
 
-const pagina = document.querySelector('html') || '';
+const pagina = document.querySelector('html');
 
-const temaSalvo = localStorage.getItem('tema');
+const temaSalvo = localStorage.getItem('tema') || '';
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#tema').value = temaSalvo;
     pagina.dataset.theme = temaSalvo;
