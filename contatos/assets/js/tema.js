@@ -20,7 +20,7 @@ temas.forEach(t => {
     selectTema.appendChild(option);
 });
 
-const pagina = document.querySelector('html');
+const pagina = document.querySelector('html') || '';
 
 const temaSalvo = localStorage.getItem('tema');
 document.addEventListener('DOMContentLoaded', () => {
