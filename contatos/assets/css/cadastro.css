@@ -1,0 +1,10 @@
+@import url('base.css');
+
+form {
+    width: 480px;
+    background-color: var(--cor-superfice);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 16px;
+    box-shadow: #0000001a -4px 9px 25px -6px;
+}

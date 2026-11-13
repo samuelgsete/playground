@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <link rel="stylesheet" href="assets/css/cadastro.css">
+        <title>Novo contato</title>
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <a class="logo" href="index.html"></a>
+                <a href="index.html" class="btn btn-light">
+                    <span class="material-symbols-outlined icon">arrow_back</span>
+                    Voltar
+                </a>
+            </header>
+
+            <main>
+                <h1 class="title">Novo contato</h1>
+                <p class="text">Preencha os dados para adicionar à agenda</p>
+
+                <form onsubmit="salvar(event)">
+                    <div class="field">
+                        <label for="primeironome">Primeiro nome</label>
+                        <span class="material-symbols-outlined field-icon">person</span>
+                        <input id="primeironome" name="primeironome" type="text" class="input-field" placeholder="Ex.: Mateus" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="segundonome">Segundo nome</label>
+                        <span class="material-symbols-outlined field-icon">person_add</span>
+                        <input id="segundonome" name="segundonome" type="text" class="input-field" placeholder="Ex.: Santos" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <span class="material-symbols-outlined field-icon">mail</span>
+                        <input id="email" name="email" type="email" class="input-field" placeholder="Ex.: contato@email.com" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">WhatsApp</label>
+                        <span class="material-symbols-outlined field-icon">phone</span>
+                        <input id="whatsapp" name="whatsapp" type="text" class="input-field" placeholder="Ex.: (00)00000-0000" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="categoria">Categoria</label>
+                        <span class="material-symbols-outlined field-icon">label</span>
+                        <select name="categoria" id="categoria" class="input-field">
+                            <option value="">selecione...</option>
+                            <option value="Favoritos">Favoritos</option>
+                            <option value="Família">Família</option>
+                            <option value="Trabalho">Trabalho</option>
+                            <option value="Amigos">Amigos</option>
+                        </select>
+                    </div>
+
+                    <hr>
+
+                    <div class="row end">
+                        <button class="btn btn-light" type="reset">
+                            <span class="material-symbols-outlined icon">close</span>
+                            Cancelar
+                        </button>
+
+                        <button class="btn btn-primary" type="submit">
+                            <span class="material-symbols-outlined icon">done</span>
+                            Salvar
+                        </button>
+                    </div>
+                </form>
+
+                <div class="field fit-content my-3">
+                    <label for="tema">Tema da página</label>
+                    <span class="material-symbols-outlined field-icon">palette</span>
+                    <select name="tema" id="tema" class="input-field" onchange="trocarTema(this.value)"></select>
+                </div>
+            </main>
+        </div>
+        <script src="assets/js/tema.js"></script>
+        <script src="assets/js/logo.js"></script>
+        <script src="assets/js/cadastro.js"></script>
+        <script src="assets/js/spinner.js"></script>
+    </body>
+</html>

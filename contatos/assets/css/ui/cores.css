@@ -1,0 +1,164 @@
+/* Tema principal  */
+:root {
+    color-scheme: light;
+    --cor-superfice: #ffffff;
+    --cor-primaria: #3B4CCA;
+    --cor-primaria-escura: #2B3899;
+    --cor-primaria-suave: #bcc4f6b9;
+    --cor-primaria-opaca: #3b4cca23;
+    --cor-neutra:#eeeff1;
+    --cor-titulo: #202027;
+    --cor-subtitulo: #81828b;
+    --cor-texto: #565a5e;
+    --cor-fundo: #3b4cca0f;
+    --cor-borda: #bfc3cd;
+    --cor-destaque: #02a910;
+    --cor-sobreposicao: #3b4cca0f;
+    --cor-erro: #df2b2b;
+}
+
+[data-theme="azul-escuro"] {
+    color-scheme: dark;
+    --cor-superfice: #1b1c23;
+    --cor-primaria: #6674f0;
+    --cor-primaria-escura: #8591f5;
+    --cor-primaria-suave: #6674f04d;
+    --cor-primaria-opaca: #6674f026;
+    --cor-neutra: #25262e;
+    --cor-titulo: #f1f2f6;
+    --cor-subtitulo: #9a9ca8;
+    --cor-texto: #c3c6cd;
+    --cor-fundo: #121319;
+    --cor-borda: #34363f;
+    --cor-destaque: #2fcf3e;
+    --cor-sobreposicao: #12131999;
+    --cor-erro: #df2b2b;
+}
+
+[data-theme="vermelho-escuro"] {
+    color-scheme: dark;
+    --cor-superfice: #1f1a1b;
+    --cor-primaria: #ef4e5a;
+    --cor-primaria-escura: #f47680;
+    --cor-primaria-suave: #ef4e5a4d;
+    --cor-primaria-opaca: #ef4e5a26;
+    --cor-neutra: #2a2324;
+    --cor-titulo: #f6f1f2;
+    --cor-subtitulo: #a89a9c;
+    --cor-texto: #cdc3c5;
+    --cor-fundo: #151112;
+    --cor-borda: #3a3133;
+    --cor-destaque: #2fcf3e;
+    --cor-sobreposicao: #15111299;
+    --cor-erro: #df2b2b;
+}
+
+[data-theme="verde-escuro"] {
+    color-scheme: dark;
+    --cor-superfice: #1a1e1c;
+    --cor-primaria: #3ecf8e;
+    --cor-primaria-escura: #6bdcaa;
+    --cor-primaria-suave: #3ecf8e4d;
+    --cor-primaria-opaca: #3ecf8e26;
+    --cor-neutra: #232a26;
+    --cor-titulo: #f1f6f3;
+    --cor-subtitulo: #9aa8a0;
+    --cor-texto: #c3cdc7;
+    --cor-fundo: #111513;
+    --cor-borda: #313a35;
+    --cor-destaque: #2fcf3e;
+    --cor-sobreposicao: #11151399;
+    --cor-erro: #df2b2b;
+}
+
+
+[data-theme="roxo-escuro"] {
+    color-scheme: dark;
+    --cor-superfice: #1d1a22;
+    --cor-primaria: #a64ff0;
+    --cor-primaria-escura: #bd7bf5;
+    --cor-primaria-suave: #a64ff04d;
+    --cor-primaria-opaca: #a64ff026;
+    --cor-neutra: #27222e;
+    --cor-titulo: #f4f1f7;
+    --cor-subtitulo: #a39aad;
+    --cor-texto: #c9c3d0;
+    --cor-fundo: #131117;
+    --cor-borda: #362f3f;
+    --cor-destaque: #2fcf3e;
+    --cor-sobreposicao: #13111799;
+    --cor-erro: #df2b2b;
+}
+
+[data-theme="roxo-claro"] {
+    color-scheme: light;
+    --cor-superfice: #ffffff;
+    --cor-primaria: #820ad1;
+    --cor-primaria-escura: #6a08ab;
+    --cor-primaria-suave: #dcc2f3b9;
+    --cor-primaria-opaca: #820ad123;
+    --cor-neutra: #f1eef3;
+    --cor-titulo: #211d27;
+    --cor-subtitulo: #85808c;
+    --cor-texto: #5b5761;
+    --cor-fundo: #820ad10f;
+    --cor-borda: #c6c0cd;
+    --cor-destaque: #02a910;
+    --cor-sobreposicao: #820ad10f;
+    --cor-erro: #df2b2b;
+}
+
+[data-theme="laranja-claro"] {
+    color-scheme: light;
+    --cor-superfice: #ffffff;
+    --cor-primaria: #d9480f;
+    --cor-primaria-escura: #b13a0b;
+    --cor-primaria-suave: #fbd3bfb9;
+    --cor-primaria-opaca: #d9480f23;
+    --cor-neutra: #f3efec;
+    --cor-titulo: #26201d;
+    --cor-subtitulo: #8a827d;
+    --cor-texto: #5f5853;
+    --cor-fundo: #d9480f0f;
+    --cor-borda: #cfc5be;
+    --cor-destaque: #02a910;
+    --cor-sobreposicao: #d9480f0f;
+    --cor-erro: #df2b2b;
+}
+
+[data-theme="dourado-escuro"] {
+    color-scheme: dark;
+    --cor-superfice: #1f1c16;
+    --cor-primaria: #e5b23a;
+    --cor-primaria-escura: #f0c869;
+    --cor-primaria-suave: #e5b23a4d;
+    --cor-primaria-opaca: #e5b23a26;
+    --cor-neutra: #2a261d;
+    --cor-titulo: #f7f3ea;
+    --cor-subtitulo: #a9a08c;
+    --cor-texto: #cfc7b6;
+    --cor-fundo: #15130e;
+    --cor-borda: #3b3528;
+    --cor-destaque: #2fcf3e;
+    --cor-sobreposicao: #15130e99;
+    --cor-erro: #df2b2b;
+}
+
+[data-theme="verde-claro"] {
+    color-scheme: light;
+    --cor-superfice: #ffffff;
+    --cor-primaria: #2d6a4f;
+    --cor-primaria-escura: #1f4d38;
+    --cor-primaria-suave: #c3e0cfb9;
+    --cor-primaria-opaca: #2d6a4f23;
+    --cor-neutra: #eef1ef;
+    --cor-titulo: #1c2420;
+    --cor-subtitulo: #7f8a84;
+    --cor-texto: #56605a;
+    --cor-fundo: #2d6a4f0f;
+    --cor-borda: #c2cbc6;
+    --cor-destaque: #02a910;
+    --cor-sobreposicao: #2d6a4f0f;
+    --cor-erro: #df2b2b;
+    --cor-sobre-primaria: #fff;
+}

@@ -1,0 +1,30 @@
+@import url('base.css');
+
+td > h4 {
+    font-size: 18px;
+    margin: 8px 0;
+    color: var(--cor-titulo);
+}
+
+td > div.contato {
+    font-size: 16px;
+    margin: 4px 0;
+    font-size: 16px;
+    color: var(--cor-subtitulo);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+td > div.contato > span {
+    color: var(--cor-texto);
+    font-weight: 550;
+    text-decoration: none;
+}
+
+div.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}

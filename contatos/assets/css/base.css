@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('ui/logo.css');
+@import url('ui/cores.css');
+@import url('ui/form.css');
+@import url('ui/util.css');
+@import url('ui/table.css');
+@import url('ui/spinner.css');
+@import url('ui/avatar.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+html, body, div#content {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-superfice);
+    border-bottom: 2px solid var(--cor-neutra);
+    box-shadow: #00000014 0px 4px 12px;
+}
+
+header > img {
+    display: block;
+    width: 140px;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    padding: 2% 15%;
+    min-height: calc(100% - 90px);
+    background-color: var(--cor-fundo);
+}
+
+h1.title {
+    color: var(--cor-titulo);
+    font-size: 30px;
+}
+
+p.text {
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--cor-texto);
+}

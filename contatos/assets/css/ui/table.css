@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    margin-top: 24px;
+    background-color: var(--cor-superfice);
+    border-radius: 16px;
+    padding: 16px;
+    border-spacing: 0;
+    box-shadow: #0000001a -4px 9px 25px -6px;
+}
+
+tr, td {
+    padding: 20px 15px;
+    border-bottom: 2px solid var(--cor-neutra);
+    cursor: pointer;
+}
+
+tr {
+    border-spacing: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+tr:last-child td {
+    border: none;
+}
+
+td.vazio {
+    font-size: 18px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--cor-texto);
+}
+
+.cell-sm {
+    text-align: center;
+    width: 70px;
+}

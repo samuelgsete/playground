@@ -1,0 +1,153 @@
+.btn {
+    display: flex;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    align-items: center; 
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 0.25s;
+}
+
+span.icon {
+    transition: all 0.25s;
+}
+
+.btn:hover > span.icon {
+    transform: translateX(2px);
+}
+
+.btn-primary {
+    color: var(--cor-superfice);
+    background-color: var(--cor-primaria);
+    border: 2.5px solid var(--cor-primaria);
+    box-shadow: #00000029 0px 1px 4px;
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-primaria-escura);
+    border-color: var(--cor-primaria-escura);
+}
+
+.btn-light {
+    font-weight: 600;
+    color: var(--cor-titulo);
+    background-color: var(--cor-neutra);
+    border: 2.5px solid transparent;
+}
+
+.btn-light:hover {
+    color: var(--cor-primaria);
+    background-color: var(--cor-primaria-opaca);
+    box-shadow: #00000029 0px 1px 4px;
+}
+
+.btn-icon {
+    width: 42px;
+    height: 42px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--cor-titulo);
+    background-color: transparent;
+    border: 2.5px solid transparent;
+    transition: all 0.3s;
+}
+
+.btn-icon:hover {
+    color: var(--cor-primaria-escura);
+    background-color: var(--cor-primaria-opaca);
+    box-shadow: #00000029 0px 1px 4px;
+}
+
+div.field {
+    margin: 12px 0;
+    position: relative;
+}
+
+.input-field, div.field > label {
+    display: block;
+}
+
+div.field > label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-titulo);
+    transition: all 0.3s;
+}
+
+div.field:focus-within > label, div.field:focus-within > span.field-icon {
+    color: var(--cor-primaria);
+} 
+
+.input-field {
+    margin: 4px 0;
+    font-size: 16px;
+    padding: 14px 14px 14px 34px;
+    width: 100%;
+    color: var(--cor-texto);
+    background-color: var(--cor-superfice);
+    border-radius: 10px;
+    border: 2px solid var(--cor-borda);
+    transition: all 0.4s;
+}
+
+.input-field:hover {
+    border-color: var(--cor-primaria-suave);
+    box-shadow: #11111a1a 0px 1px 0px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: #0000001a -4px 9px 25px -6px;
+}
+
+span.field-icon {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: var(--cor-borda);
+    font-size: 22px;
+    pointer-events: none;
+    transition: color 0.3s;
+}
+
+div.field-checkbox > input {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    place-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+div.field-checkbox > input:checked {
+    background: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+/* Truque pra desenhar o v-zinho no checkbox */
+div.field-checkbox > input:checked::before {
+    content: "check";
+    font-family: "Material Symbols Outlined";
+    color: var(--cor-superfice);
+    font-size: 22px;
+    font-weight: 900;
+}

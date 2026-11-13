@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <title>Meus contatos</title>
+    </head>
+    <body onload="buscarContatos()">
+        <div id="content">
+           
+            <header>
+                <a class="logo" href="index.html"></a>
+                <a href="cadastro.html" class="btn btn-primary">
+                    <span class="material-symbols-outlined icon">add</span>
+                    Novo contato
+                </a>
+            </header>
+            <main>
+
+                <h1 class="title">Meus contatos</h1>
+                <p class="text">Preencha os dados para adicionar à agenda</p>
+
+                <div class="field my">
+                    <input 
+                        id="busca"
+                        name="busca"
+                        type="text"
+                        class="input-field"
+                        placeholder="Busque por nome, email ou Whatsapp"
+                        oninput="pesquisar(event)"
+                    >
+                    <span class="material-symbols-outlined field-icon">search</span>
+                </div>
+
+                <div class="table-box">
+                    <div class="table-header">
+                        <p class="text"><span id="total">0</span> contato(s) salvo(s)</p>
+                        <button id="btn-delete-all" class="btn btn-light hide" onclick="excluirVarios()">
+                            <span class="material-symbols-outlined icon">delete</span>
+                            Excluir selecionados <strong class="btn-badge red-badge">1</strong>
+                        </button>
+                    </div>
+                    <table id="contatos"></table>
+                </div>
+
+                <div class="field fit-content my-3">
+                    <label for="tema">Tema da página</label>
+                    <span class="material-symbols-outlined field-icon">palette</span>
+                    <select name="tema" id="tema" class="input-field" onchange="trocarTema(this.value)"></select>
+                </div>
+
+            </main>
+        </div>
+
+        <script src="assets/js/tema.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/logo.js"></script>
+        <script src="assets/js/spinner.js"></script>
+    </body>
+</html>

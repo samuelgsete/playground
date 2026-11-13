@@ -1,0 +1,26 @@
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo svg {
+    height: 40px;
+    width: auto;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--cor-titulo);
+}
+
+.logo-balao {
+    fill: var(--cor-primaria);
+}
+
+.logo-pessoa {
+    fill: #fff;
+}
