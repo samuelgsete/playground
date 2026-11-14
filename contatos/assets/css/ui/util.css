@@ -5,6 +5,7 @@
 .row {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .end {
@@ -79,4 +80,10 @@ hr {
 
 .my-4 {
     margin: 40px 0 !important;
+}
+
+@media (max-width: 450px) {
+    .fit-content {
+        width: 100% !important;
+    }
 }

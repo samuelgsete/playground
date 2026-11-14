@@ -55,3 +55,13 @@ p.text {
     font-size: 16px;
     color: var(--cor-texto);
 }
+
+@media (max-width: 600px) {
+    header {
+        padding: 0 8%;
+    }
+
+    main {
+        padding: 6%;
+    }
+}

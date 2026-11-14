@@ -13,6 +13,7 @@ td > div.contato {
     color: var(--cor-subtitulo);
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 14px;
 }
 
@@ -26,5 +27,13 @@ div.table-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
+}
+
+@media (max-width: 800px) {
+    table {
+        border-radius: 0;
+    }
+
 }
